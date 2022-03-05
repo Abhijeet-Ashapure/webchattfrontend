@@ -1,0 +1,66 @@
+<app-header></app-header>
+<br> <br> <br> <br>
+<section class="seacrhPageBlock">
+  <div class="custom-container">
+    <div class="searchBBox posRel1">
+      <div class="searchbox">
+        <button class="btn-menu">
+          <img src="https://img.icons8.com/cute-clipart/24/000000/top-menu.png">
+        </button>
+        <input id="search" type="text" placeholder="Search..." name="search" class="search" (keyup)="checkUserExist()"
+          [(ngModel)]="searchUser">
+        <button class="btn-search">
+          <img src="https://img.icons8.com/cotton/24/000000/search--v2.png">
+        </button>
+        <button class="btn-search" (click)="sendEmailToInvite(searchUser)"
+          title="On Click to this button you can send email to enterd email Id">
+          <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div id="Modal" class="search-modal">
+        <div class="search-modal-header">
+          <h3>Search</h3>
+          <span id="close" style="position: relative;"><img
+              src="https://img.icons8.com/cotton/24/000000/cancel--v2.png"></span>
+        </div>
+        <div *ngIf="!showInvite" class="search-modal-body">
+          <div *ngIf="userType != 'guestUser'">
+            <div *ngFor="let user of allUser | filter:searchUser">
+              <div *ngIf="userId != user._id" class="message" [routerLink]="['/Web-Chat/Chat', user._id]">
+                <div class="message-avatar">
+                  <img src="assets/img/avatar.jpg" alt="">
+                </div>
+                <div class="message-body">
+                  <p>{{user.userName}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="userType == 'guestUser'">
+            <div *ngFor="let user of showUserList">
+              <div *ngIf="userId != user._id" class="message" [routerLink]="['/Web-Chat/Chat', user._id]">
+                <div class="message-avatar">
+                  <img src="assets/img/avatar.jpg" alt="">
+                </div>
+                <div class="message-body">
+                  <p>{{user.userName}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="showInvite" class="message">
+            <div class="message-avatar">
+              <img src="assets/img/avatar.jpg" alt="">
+            </div>
+            <div class="message-body">
+              <p>{{searchUser}} </p>
+            </div>
+            <button class="btn btn-primary button-effect signpbtn" (click)="sendInvite(searchUser)"
+              style="padding: 10px 10px !important;position: absolute;right: 15px;">Invite Friends!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

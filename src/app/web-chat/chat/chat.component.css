@@ -1,0 +1,227 @@
+.media1 {
+  float: left;
+  clear: both;
+}
+.chat-main {
+  overflow-y: auto;
+  height: 450px;
+  overflow-x: hidden;
+}
+
+.imgName img {
+  border-radius: 50%;
+  max-width: 50px;
+  border: 1px solid #1c9dea;
+  margin-right: 37px;
+}
+
+.chitchat-container {
+  background: var(--background) !important;
+  color: var(--on-background) !important;
+}
+.chitchat-main[_ngcontent-oof-c59] {
+  /* background: var(--primary); */
+  color: var(--on-primary) !important;
+  background-color: #f2f2f2 !important;
+  border-bottom: 1px solid #ddd !important;
+  padding: 5px 10px;
+}
+input[type="file"] {
+  visibility: hidden;
+}
+.chitchat-main .messages {
+  padding: 45px 15px 45px;
+}
+
+.inviteboxStype {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #1c9dea29;
+  padding: 15px;
+  color: #1c9dea;
+  margin: 20px 0 0 0;
+  border-radius: 10px;
+}
+.usernamestyle {
+  font-size: 22px;
+  text-transform: capitalize;
+  color: #1c9dea;
+  font-weight: 700;
+}
+.contact-details {
+  flex: 1;
+  background-color: #f2f2f2;
+  padding: 15px;
+}
+.dropMenu.dropdownStyle {
+  position: relative;
+  right: auto;
+  top: auto;
+}
+.messageBox {
+  width: 100%;
+}
+.actionList {
+  border-bottom: 1px solid #ddd;
+  padding: 6px 10px;
+}
+.actionList h5 {
+  line-height: 27px;
+}
+.actionList:last-child {
+  border-bottom: 0px;
+}
+.actionList a {
+  margin-right: 10px;
+}
+.sendEmail {
+  height: 42px;
+  box-shadow: none;
+  border: none;
+  min-width: 130px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.actionList h5 {
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  color: #647589;
+}
+/*
+**************************** Loader css *****************************
+*/
+.loaderClass {
+  z-index: 11111;
+  margin-left: 50%;
+  margin-top: 15%;
+  position: absolute;
+}
+/*
+ .loading span {
+  display: inline-block;
+  vertical-align: middle;
+  width: .6em;
+  height: .6em;
+  margin: .19em;
+  background: #007DB6;
+  border-radius: .6em;
+  animation: loading 1s infinite alternate;
+}
+
+/*
+ * Dots Colors
+ * Smarter targeting vs nth-of-type?
+ */
+.loading span:nth-of-type(2) {
+  background: #008fb2;
+  animation-delay: 0.2s;
+}
+.loading span:nth-of-type(3) {
+  background: #009b9e;
+  animation-delay: 0.4s;
+}
+.loading span:nth-of-type(4) {
+  background: #00a77d;
+  animation-delay: 0.6s;
+}
+.loading span:nth-of-type(5) {
+  background: #00b247;
+  animation-delay: 0.8s;
+}
+.loading span:nth-of-type(6) {
+  background: #5ab027;
+  animation-delay: 1s;
+}
+.loading span:nth-of-type(7) {
+  background: #a0b61e;
+  animation-delay: 1.2s;
+}
+
+/*
+ * Animation keyframes
+ * Use transition opacity instead of keyframes?
+ */
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.innerdiv.d-flex.align-items-center {
+  padding: 7px 0;
+}
+
+h1 {
+  height: auto;
+  text-align: center;
+  margin: 0;
+  background: rgb(253, 252, 252);
+  color: var(--on-primary);
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 35px;
+  top: 0px;
+  margin: 0 5px;
+}
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f2f2f2;
+  transition: 0.4s;
+  border: 1px solid #ddd;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #1c9dea;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+span.form-inline.languageSelect {
+  margin-left: 10px;
+}

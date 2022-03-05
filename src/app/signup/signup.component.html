@@ -1,0 +1,106 @@
+<div class="login-page1"  style="height: calc(100vh - 55px);">
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-12">
+                <div class="login-contain-main">
+                    <div class="left-page">
+                        <div class="login-content">
+                            <div class="login-content-header">
+                                <img routerLink="/" src="assets/img/landing-logo.png" alt="images">
+                            </div>
+                            <h3>Hello We are Web Chat Tool</h3>
+                            <h4>Please login to your account.</h4>
+                            <form class="form1" [formGroup]="signupForm">
+                                <div class="form-group">
+                                    <label class="col-form-label" for="uname">Username</label>
+                                    <input class="form-control" id="uname" type="text" formControlName="userName" placeholder="Enter Username">
+                                    <div
+                                        *ngIf="(signupForm.get('userName')?.invalid && signupForm.get('userName')?.touched) || signupForm.get('userName')?.dirty">
+                                        <small *ngIf="signupForm.get('userName')?.errors?.required" class="text-danger">Username
+                                          is
+                                          required</small>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label" for="inputEmail3">Email Address</label>
+                                    <input class="form-control" id="inputEmail3" type="email" formControlName="email"
+                                        placeholder="Enter EmailId">
+                                        <div
+                                        *ngIf="(signupForm.get('email')?.invalid && signupForm.get('email')?.touched) || signupForm.get('email')?.dirty">
+                                        <small *ngIf="signupForm.get('email')?.errors?.required" class="text-danger">Email
+                                          is
+                                          required</small>
+                                        <small *ngIf="signupForm.get('email')?.errors?.pattern" class="text-danger">Please
+                                          provide
+                                          a valid email address</small>
+                                      </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label" for="inputPassword3">Password</label><span> </span>
+                                    <input class="form-control" id="inputPassword3" type="password" formControlName="password"
+                                        placeholder="Enter Password">
+                                        <div
+                                        *ngIf="(signupForm.get('password')?.invalid && signupForm.get('password')?.touched) || signupForm.get('password')?.dirty">
+                                        <small *ngIf="signupForm.get('password')?.errors?.required" class="text-danger">Password
+                                          is
+                                          required</small>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="buttons"><button type="button" class="btn btn-primary button-effect signpbtn" [disabled]="signupForm.invalid"
+                                           (click)="UserSignup(signupForm.value)">Signup</button></div>
+                                </div>
+                                <div class="termscondition">
+                                    <h4><span>*</span>Terms and condition<b>&amp;</b>Privacy policy</h4>
+                                </div>
+                                <div class="right-page">
+                                    <div class="right-login animat-rate">
+                                        <div class="animation-block">
+                                            <div class="bg_circle">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                            <div class="cross"></div>
+                                            <div class="cross1"></div>
+                                            <div class="cross2"></div>
+                                            <div class="dot"></div>
+                                            <div class="dot1"></div>
+                                            <div class="maincircle"></div>
+                                            <div class="top-circle"></div>
+                                            <div class="center-circle"></div>
+                                            <div class="bottom-circle"></div>
+                                            <div class="bottom-circle1"></div>
+                                            <div class="right-circle"></div>
+                                            <div class="right-circle1"></div>
+                                            <!-- <img class="heart-logo" src="assets/img/signin/5.png" alt="login logo"/> -->
+                                            <!-- <img class="has-logo" src="assets/img/signin/4.png" alt="login logo"/> -->
+                                            <!-- <img class="login-img" src="assets/img/signin/1.png" alt="login logo"/> -->
+                                            <!-- <img class="boy-logo" src="assets/img/signin/6.png" alt="login boy logo"/> -->
+                                            <!-- <img class="girl-logo" src="assets/img/signin/7.png" alt="girllogo"/> -->
+                                            <img class="cloud-logo" src="assets/img/signin/2.png" alt="login logo" />
+                                            <img class="cloud-logo1" src="assets/img/signin/2.png" alt="login logo" />
+                                            <img class="cloud-logo2" src="assets/img/signin/2.png" alt="login logo" />
+                                            <img class="cloud-logo3" src="assets/img/signin/2.png" alt="login logo" />
+                                            <img class="cloud-logo4" src="assets/img/signin/2.png" alt="login logo" />
+                                            <img class="boy-logo" src="assets/img/signin/illustrator1.png" alt="login logo" />
+                                            <!-- <img class="has-logo1" src="assets/img/signin/4.png" alt="login logo"/> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

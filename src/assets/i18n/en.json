@@ -1,0 +1,26 @@
+{
+    "HOME": {
+      "TITLE": "Hello Angular with ngx-translate!",
+      "SELECT": "Change language"
+    },
+    "LANDING": {
+        "messenger": "Messenger",
+        "email_templates": "Email Templates",
+        "basic": "Basic",
+        "template2": "Template 2",
+        "template3": "Template 3",
+        "authentication": "Authentication",
+        "signin": "Sign in",
+        "signin_classic": "Signin Classic",
+        "signup": "Sign up",
+        "signup_classic": "Signup Classic",
+        "other_pages": "Other Pages",
+        "about": "About",
+        "faq": "FAQ",
+        "elements": "Elements",
+        "search": "Search",
+        "title": "Easy To Use Our Chat App",
+        "startchat": "Start a chat",
+        "subtitle": "Easy to use our chat app, Attractive and clean design, with many Features Dark & light, Recent Chat And many more......."
+    }
+}

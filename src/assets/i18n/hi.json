@@ -1,0 +1,26 @@
+{
+    "HOME": {
+      "TITLE": "Hello Angular with ngx-translate!",
+      "SELECT": "Change language"
+    },
+    "LANDING": {
+        "messenger": "सन्देशवाहक",
+        "email_templates": "ईमेल टेम्प्लेट",
+        "basic": "बुनियादी",
+        "template2": "टेम्प्लेट 2",
+        "template3": "टेम्प्लेट 3",
+        "authentication": "प्रमाणीकरण",
+        "signin": "साइन इन",
+        "signin_classic": "साइनइन क्लासिक",
+        "signup": "साइन अप",
+        "signup_classic": "साइन अप क्लासिक",
+        "other_pages": "अन्य पेज",
+        "about": "के बारे में",
+        "faq": "सामान्य प्रश्न",
+        "elements": "तत्वों ",
+        "search": "खोज",
+        "title": "हमारा चैट ऐप उपयोग करने के लिए आसान है",
+        "startchat":"चैट शुरू करें",
+        "subtitle": "कई फ़ीचर डार्क के साथ हमारे चैट ऐप, आकर्षक और साफ डिज़ाइन का उपयोग करना आसान है"
+    }
+}
